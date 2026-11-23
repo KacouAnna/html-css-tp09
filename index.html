@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaires</title>
+</head>
+<body>
+     <h1>Vous voulez participer à notre évènement ? Inscrivez-vous !</h1>
+    <form method="post" action="#">
+        <fieldset id="section1">
+            <legend>Informations personnelles :</legend>
+            <label for="nom">Entrez votre nom :</label>
+            <input type="text" name="nom" id="nom" required> 
+            <label for="prenom">Entrez votre prénom :</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="pseudo">Choisissez un pseudonyme :</label>
+            <input type="text" name="pseudo" id="pseudo">
+        </fieldset>   
+
+        <fieldset id="section2">
+            <legend>Informations supplémentaires</legend>
+            <h3>Quels sont vos loisirs? </h3>
+            <br/>
+            <input type="checkbox" name="hobbies" value="informatique" id="inf">
+            <label for="inf">Informatique</label>
+            <input type="checkbox" name="hobbies" value="sport" id="sport">
+            <label for="sport">Sport</label>
+            <input type="checkbox" name="hobbies" value="voyages" id="voyages">
+            <label for="voyages">Voyages</label>
+            <input type="checkbox" name="hobbies" value="musique" id="musique">
+            <label for="musique">Musique</label>
+        </fieldset>
+        <fieldset id="section3">
+            <legend>D'où venez vous?</legend>
+            <label for="pays">Votre pays</label>
+            <select name="pays">
+                <optgroup label="Europe">
+                    <option value="albinie">Albanie</option>
+                    <option value="allemangne">Allemagne</option>
+                    <option value="autriche">Autriche</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="bahamas" selected="selected">Bahamas</option>
+                    <option value="belize">Belize</option>
+                    <option value="bolivie">Bolivie</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="afrique du sud">Afrique du Sud</option>
+                    <option value="angola">Angola</option>
+                    <option value="algerie">Algérie</option>
+                    <option value="burkina faso">Burkina Faso</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="japon">Japon</option>
+                    <option value="chine">Chine</option>
+                    <option value="coree du sud">Corée du Sud</option>
+                    <option value="vietnam">Vietnam</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset id="section4">
+            <label for="prez">Pourquoi voulez-vous y participer?</label>
+            <textarea id="prez" name="presentation"></textarea>
+        </fieldset>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FFEBCD;
+    color: #8B4513;
+}
+label{
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    text-transform:uppercase ;
+}
+fieldset{
+    padding: 20px;
+    border: 0;
+}
+#section1 legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+legend{
+    padding: 10px;
+}
+h3{
+    padding: 10px;
+}
+input[type=submit]{
+    width: 80px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 13px;
+}
+input[type=submit]:hover{
+    background-color: #8B4513;
+    color: white;
+}
